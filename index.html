@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍪 Cookie Clicker DINGUE 🍪</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="particle-container" id="particles"></div>
+    
+    <div class="header">
+        <h1 class="title">🍪 COOKIE EMPIRE 🍪</h1>
+        <div class="stats">
+            <div class="stat-box">
+                <span class="stat-label">Cookies</span>
+                <span class="stat-value" id="cookieCount">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Par seconde</span>
+                <span class="stat-value" id="cookiesPerSecond">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Total produit</span>
+                <span class="stat-value" id="totalCookies">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="cookie-section">
+            <div class="cookie-container">
+                <div class="cookie-glow"></div>
+                <button class="cookie-button" id="cookieBtn">
+                    <div class="cookie">
+                        <div class="cookie-shine"></div>
+                        <div class="chip chip1"></div>
+                        <div class="chip chip2"></div>
+                        <div class="chip chip3"></div>
+                        <div class="chip chip4"></div>
+                        <div class="chip chip5"></div>
+                        <div class="chip chip6"></div>
+                    </div>
+                </button>
+                <div class="click-text" id="clickValue">+1</div>
+            </div>
+            
+            <div class="multiplier-section">
+                <h3>🚀 MULTIPLICATEURS</h3>
+                <div class="multipliers" id="multipliers"></div>
+            </div>
+        </div>
+
+        <div class="shop-section">
+            <h2>🏪 BOUTIQUE D'AMÉLIORATIONS</h2>
+            <div class="shop-tabs">
+                <button class="tab active" data-tab="buildings">Bâtiments</button>
+                <button class="tab" data-tab="upgrades">Améliorations</button>
+            </div>
+            
+            <div class="shop-content">
+                <div class="shop-category active" id="buildings">
+                    <div class="shop-items" id="buildingsList"></div>
+                </div>
+                <div class="shop-category" id="upgrades">
+                    <div class="shop-items" id="upgradesList"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="achievements-panel" id="achievementsPanel">
+        <h3>🏆 SUCCÈS</h3>
+        <div class="achievements-grid" id="achievementsList"></div>
+    </div>
+
+    <button class="toggle-achievements" id="toggleAchievements">
+        🏆 <span id="achievementCount">0</span>
+    </button>
+
+    <div class="floating-cookies" id="floatingCookies"></div>
+
+    <script src="java.js"></script>
+</body>
+</html>
